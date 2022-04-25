@@ -1,0 +1,33 @@
+CREATE TABLE students(
+    id INTEGER PRIMARY KEY,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    course TEXT NOT NULL,
+    gender TEXT NOT NULL,
+    age INTEGER
+);
+
+
+
+INSERT INTO students(first_name, last_name, age, gender, number_of_group) VALUES ("Alex", "Altaitsev", 22, "M","125");
+INSERT INTO students(first_name, last_name, age, gender, number_of_group) VALUES ("Makes", "Ramen", 21, "M" , "125");
+INSERT INTO students(first_name, last_name, age, gender, number_of_group) VALUES ("Dasha", "Homich", 19, "F" , "125");
+INSERT INTO students(first_name, last_name, age, gender, number_of_group) VALUES ("Dart", "Vader", 48, "M", "66");
+INSERT INTO students(first_name, last_name, age, gender, number_of_group) VALUES ("Dart", "Sidius", 123, "M" , "66");
+
+
+
+CREATE TABLE audience(
+    id INTEGER PRIMARY KEY,
+    audience_number INTEGER NOT NULL,
+    floor INTEGER NOT NULL
+    
+);
+
+ALTER TABLE audience ADD COLUMN discipline TEXT;
+
+INSERT INTO audience(audience_number, floor, discipline) VALUES (214, 12, "Russian Language");
+INSERT INTO audience(audience_number, floor, discipline) VALUES (114, 11, "Higher Mathematics");
+INSERT INTO audience(audience_number, floor, discipline) VALUES (314, 13, "Dark Side Training");
+
